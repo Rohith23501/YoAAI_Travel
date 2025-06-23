@@ -1,0 +1,112 @@
+// _imageWithButtons.scss
+
+.image-with-buttons-container {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; // Centers items horizontally within the column
+  border: 1px solid #fff;
+  
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width:fill;
+  //background-color: #fff;
+  font-family: Arial, sans-serif;
+  height: auto;
+
+  // background-image: url('https://i.imgur.com/6LjbHk2.jpeg') ;
+  //background-image:  url('https://i.imgur.com/2U4TJVU.jpeg') ;
+  //background-image:  url("https://theenterpriseworld.com/wp-content/uploads/2025/05/Untitled-design-2025-05-16T123015.037.jpg") ;
+  //background-image: url("https://i.imgur.com/ztuD9B3.jpeg");  //seven-wonders-trial-images
+  // background-image: url("https://i.imgur.com/F9txxxA.jpeg");  //seven-wonders-trial-images
+  // background-image: url("https://i.imgur.com/nwvy7LX.jpeg");  //seven-wonders-trial-images
+  background-image: url("https://i.imgur.com/kgoLMaq.jpeg");  //seven-wonders-trial-images
+   //background-image: url("https://i.imgur.com/eV9QyzD.jpeg");   //seven-wonders-trial-images
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  margin-left: auto;
+  margin-right: auto;
+  .image-sub-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    .image-wrapper {
+    width: 100%;
+    height: 400px; // Fixed height for the image area
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+
+  .display-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+  }
+
+  .buttons-wrapper {
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row; // Stacks buttons vertically if you have multiple
+    gap: 10px; // Space between buttons
+  }
+
+  .action-button {
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      background-color: #0056b3;
+      transform: translateY(-1px);
+    }
+
+    &:active {
+      background-color: #004085;
+      transform: translateY(0);
+    }
+
+    &.secondary {
+      background-color: #6c757d;
+      &:hover {
+        background-color: #5a6268;
+      }
+    }
+
+    &.danger {
+      background-color: #dc3545;
+      &:hover {
+        background-color: #c82333;
+      }
+    }
+
+  }
+  }
+  .image-buttons-container{
+    display: flex;
+
+    .image-button{
+      display: flex;
+
+    }
+   
+    }
+
+  }
+
+
+
+

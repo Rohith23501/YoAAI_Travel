@@ -1,0 +1,195 @@
+/* src/components/ContactUsPage/contact_us_page.styles.scss */
+
+// Import Google Font - Inter (make sure to link it in your public/index.html)
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.contact-page-container {
+  font-family: 'Inter', sans-serif;
+  padding: 40px 20px; /* Padding for top/bottom and left/right */
+  background-color: #f8fbfd; /* Light background for the whole page */
+  min-height: 100vh; /* Ensure it takes full viewport height */
+  display: flex;
+  justify-content: center; /* Center the content wrapper horizontally */
+  align-items: flex-start; /* Align content to the top initially */
+}
+
+.contact-content-wrapper {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  max-width: 800px; /* Max width for readability */
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width */
+  line-height: 1.7; /* Improved readability for paragraphs */
+  color: #333; /* Default text color */
+}
+
+.main-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #007bff; /* Primary blue color */
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.intro-paragraph {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #555;
+  &:last-of-type {
+    margin-bottom: 25px;
+  }
+}
+
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.services-list {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0;
+  margin-bottom: 30px;
+
+  li {
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+    padding-left: 25px; /* Space for custom bullet */
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Custom bullet point */
+    &::before {
+      content: '✓'; /* Checkmark icon */
+      color: #28a745; /* Green color for checkmark */
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    strong {
+      color: #0056b3; /* Darker blue for service titles */
+      font-weight: 700;
+    }
+  }
+}
+
+.call-to-action-paragraph {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #444;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #e6f2ff; /* Light blue background for CTA */
+  border-left: 5px solid #007bff;
+  border-radius: 8px;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.contact-email-text {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.email-address {
+  font-size: 1.7rem; /* Larger font for prominence */
+  font-weight: 700;
+  color: #007bff; /* Primary blue */
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  a {
+    color: inherit; /* Inherit color from parent p tag */
+    text-decoration: none; /* No underline by default */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+
+    &:hover {
+      color: #0056b3; /* Darker blue on hover */
+      text-decoration: underline; /* Underline on hover */
+    }
+  }
+}
+
+.closing-paragraph {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-content-wrapper {
+    padding: 30px;
+  }
+  .main-title {
+    font-size: 2.2rem;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .email-address {
+    font-size: 1.4rem;
+  }
+  .services-list li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-content-wrapper {
+    padding: 20px;
+    margin: 15px; /* Add some margin on very small screens */
+  }
+  .main-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-size: 1.4rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+  .intro-paragraph,
+  .call-to-action-paragraph,
+  .contact-email-text,
+  .closing-paragraph {
+    font-size: 0.95rem;
+  }
+  .services-list li {
+    font-size: 0.95rem;
+    padding-left: 20px;
+  }
+  .services-list li::before {
+    font-size: 0.9em;
+  }
+  .email-address {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,37 @@
+.step-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+   
+    border-radius: 10px;
+
+    background-image: var(--background-url, url("https://i.imgur.com/lz2WJjU.jpeg"));
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .step-title{
+        font-size: 4.5rem;
+        font-weight: bold;
+        color: #dedee7;
+        margin-top:auto;
+        margin-bottom: 10px;
+    }
+    .step-subtitle{
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #ffff00;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .step-description{
+        font-size: 0.9rem;
+        color: #fdf502;
+        margin-top: 0px;
+        text-align: center;
+    }
+}

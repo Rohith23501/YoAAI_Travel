@@ -1,0 +1,165 @@
+/* src/components/LoginPage/login_page.styles.scss */
+
+// Import Google Font - Inter (make sure to link it in your public/index.html)
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.login-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8 0%, #e0e9f0 100%); /* Soft gradient background */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  font-family: 'Inter', sans-serif; /* Apply Inter font */
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px; /* Max width for the form on larger screens */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.login-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.login-subtitle {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.message-box {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 15px; /* Space below messages */
+  font-weight: 500;
+
+  &.error-message {
+    background-color: #fee2e2; /* red-100 */
+    color: #ef4444; /* red-500 */
+    border: 1px solid #fca5a5; /* red-300 */
+  }
+
+  &.success-message {
+    background-color: #dcfce7; /* green-100 */
+    color: #22c55e; /* green-500 */
+    border: 1px solid #86efac; /* green-300 */
+  }
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between input groups */
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #444;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db; /* gray-300 */
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Include padding in width */
+
+    &:focus {
+      outline: none;
+      border-color: #3b82f6; /* blue-500 */
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2); /* blue-500 with alpha */
+    }
+  }
+
+  .input-error-text {
+    color: #ef4444; /* red-500 */
+    font-size: 0.8rem;
+    margin-top: 5px;
+    display: block;
+  }
+}
+
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: #1d4ed8; /* blue-700 */
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 99, 235, 0.2); /* Shadow with button color */
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.4); /* Focus ring */
+  }
+}
+
+.form-links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 10px;
+
+  .link-text {
+    color: #2563eb; /* blue-600 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #1d4ed8; /* blue-700 */
+      text-decoration: underline;
+    }
+  }
+}
+
+/* Basic responsiveness for smaller screens */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 25px;
+    margin: 15px; /* Smaller margins on very small screens */
+  }
+
+  .login-title {
+    font-size: 1.8rem;
+  }
+
+  .submit-button {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}

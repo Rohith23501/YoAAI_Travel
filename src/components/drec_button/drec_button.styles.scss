@@ -1,0 +1,130 @@
+@import '../../styles/variables';
+
+.drec-total-container {
+display: flex;
+flex-direction: column;
+border: transparent;
+background: transparent;
+//background-image: url("https://i.imgur.com/ztuD9B3.jpeg");  //seven-wonders-trial-images
+// background-image: url("https://i.imgur.com/F9txxxA.jpeg");  //seven-wonders-trial-images
+// background-image: url("https://i.imgur.com/nwvy7LX.jpeg");  //seven-wonders-trial-images
+// background-image: url("https://i.imgur.com/kgoLMaq.jpeg");  //seven-wonders-trial-images
+//background-image: url("https://i.imgur.com/eV9QyzD.jpeg");   //seven-wonders-trial-images
+// background-image: url("https://i.imgur.com/5cPOR0h.jpeg");
+//background-image: url('https://i.imgur.com/ggeOq6y.jpeg') ;
+background-image: url("https://i.imgur.com/M5oRl8J.jpeg") ; //animated-three-people
+//background-image: url("https://i.imgur.com/UEtHrc3.jpeg"); //mountains
+//background-image:  url('https://i.imgur.com/2U4TJVU.jpeg') ; //beach-with-boats
+//background-image: url("https://i.imgur.com/axz6xol.jpeg"); //buildings
+//background-image: url("https://i.imgur.com/xWtc3kx.jpeg"); //boat
+//background-image:  url("https://theenterpriseworld.com/wp-content/uploads/2025/05/Untitled-design-2025-05-16T123015.037.jpg") ;
+background-size: 100% 100%;
+
+background-repeat: no-repeat;
+
+max-width: 1200px;
+min-height: 500px;
+margin: 40px auto;
+padding-top: 0px;
+padding-bottom: 30px; 
+
+border-radius: 5px;
+
+  .drec-text{
+    align-items: center;
+    flex-direction:column;
+    .drec-text-element{
+        font-size: 1.5em;
+        
+        
+        font-weight: bold;
+        color: #fcfcfc;
+        margin-bottom: 0px;
+    }
+    }
+  .dropdowns-container {
+   
+    display: flex;
+    flex-wrap:wrap;
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+   
+
+    .dropdown-element{
+      display: flex;
+      margin: 10px;}
+  
+    
+     /* Space between dropdown and total */
+
+  }
+  .activities-title {
+    display: flex;
+    align-self: flex-start;
+    align-self:left;
+    padding-bottom: 0px;
+    .activities-title-text{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    font-size: 1.0rem;
+    color: black;
+    align-self: left;}
+
+  }
+  .activities-container{
+    align-self: flex-start;
+    padding-top: 0px;
+    display: flex;
+    padding-bottom: 0px;
+  }
+  .submit-button {
+    background-color: $color-primary-blue; // bg-primary-blue
+    color: $color-white; // text-white
+    padding-left: $spacing-8; // px-8
+    padding-right: $spacing-8; // px-8
+    padding-top: $spacing-4; // py-4
+    padding-bottom: $spacing-4; // py-4
+    border-radius: $border-radius-lg; // rounded-lg
+    font-weight: 600; // font-semibold
+    font-size: $font-size-lg; // text-lg
+    box-shadow: $shadow-xl; // shadow-lg (using xl shadow for prominent button)
+    
+    width: 200px;
+    position:relative;  
+    
+
+    transition: transform 0.3s ease, background-color 0.3s ease; // transition-transform duration-300
+    &:hover {
+      background-color: $color-blue-600; // hover:bg-blue-600
+      transform: translateY(-0.25rem); // hover:-translate-y-1
+    }
+  }
+ 
+  
+}
+
+.result-container{
+  display: flex;
+  background-image: url("https://i.imgur.com/54LgUHN.jpeg") ; 
+  width: 800px;
+  height: 600px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px auto;
+  .result{
+    padding-top: 150px;
+    font-size: 5.0rem;
+    color: white;
+    font-style: bold;
+    align-self: center;
+
+    align-self:auto;
+  }
+  
+}
+

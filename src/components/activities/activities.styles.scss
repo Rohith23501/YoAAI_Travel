@@ -1,0 +1,12 @@
+.activity-blocks-container{
+  display: flex;
+  flex-direction: row;
+
+  padding-top: 0px;
+  margin-left: 10px;
+  gap:20px ;
+  .activity-items{
+    display: flex;
+  }
+
+}

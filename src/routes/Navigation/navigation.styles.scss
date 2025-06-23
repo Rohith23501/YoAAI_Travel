@@ -1,0 +1,195 @@
+// .navigation {
+//   height: 70px;
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 25px;
+
+//   .logo-container {
+//     height: 100%;
+//     width: 70px;
+//     padding: 25px;
+//   }
+
+//   .nav-links-container {
+//     width: 50%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+
+//     .nav-link {
+//       padding: 10px 15px;
+//       cursor: pointer;
+//     }
+//   }
+// }
+// src/navigation.styles.scss
+
+// --- Breakpoints ---
+// src/navigation.styles.scss
+
+// --- Breakpoints ---
+// src/navigation.styles.scss
+
+// --- Breakpoints ---
+// src/navigation.styles.scss
+
+// --- Breakpoints ---
+// src/navigation.styles.scss
+
+// --- Breakpoints ---
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+// --- Colors ---
+$color-white: #ffffff;
+$color-black: #000000;
+$color-black-1: #0c0c0c ;
+$color-orange: #09acf7; // Tailwind's orange-500
+$color-gray-800: #2c3e50;
+$color-gray-700: #4a5568;
+$color-gray-200: #edf2f7; // Used for the image border
+$color-primary-blue: #007bff;
+$color-blue-600: #0056b3;
+
+// --- Spacing System ---
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 0.75rem; // 12px
+$spacing-4: 1rem;    // 16px
+$spacing-5: 1.25rem;
+$spacing-6: 1.5rem;  // 24px
+$spacing-8: 2rem;    // 32px (Good height for logo in a compact header)
+$spacing-10: 2.5rem; // 40px (For right-aligned image)
+$spacing-12: 3rem;   // 48px
+
+// --- Typography (Font Sizes) ---
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 1.875rem;
+
+// --- Max-Widths for Content Containers ---
+$max-w-7xl: 80rem; // 1280px
+
+// --- Shadows ---
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+
+// --- Z-Index (Layering) ---
+$z-index-header: 1000;
+
+// --- Specific Heights/Widths ---
+$header-height: 55px; // Reduced header height for a more compact strip
+
+// --- Navigation Header Styles ---
+.navigation-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: $z-index-header;
+  background-color: $color-orange;
+  box-shadow: $shadow-md;
+  height: $header-height; 
+  padding-top: 10px;
+  padding-bottom: 20px;// Explicitly set height for the strip
+  // Removed padding here, as the inner .navigation div will handle content spacing
+}
+
+// --- Inner Navigation Container ---
+.navigation {
+  max-width: $max-w-7xl;
+  margin: 0 auto;
+  padding: 0 $spacing-4; // Horizontal padding only
+  height: 100%; // Make it fill the parent header's height
+  display: flex;
+  justify-content: space-between;
+  align-items: center; // Vertically center all items within the header
+  // min-height is no longer needed here as height is set on parent
+  // This ensures content is always perfectly centered vertically within the fixed height strip
+
+  @media (min-width: $breakpoint-md) {
+    padding: 0 $spacing-12;
+  }
+}
+
+// --- Logo Container Styles ---
+.logo-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none; // Removes underline from the Link
+  padding-top: 5px;
+  // Styles specifically for the IMAGE within the logo-container
+  img {
+    
+    height: 80px; // Example: 32px - This scales your logo proportionally
+    width: auto;         // Image width will scale proportionally with its height.
+    padding-top: 5px;                // For a naturally wider logo, increasing height will also increase its visual width.
+
+    display: block; // Ensures the image behaves predictably within flexbox
+    margin-right: $spacing-2; // Space between logo image and any text (e.g., "AI Travel")
+  }
+
+  // Styles for text within logo-container (if you have "AI Travel" text next to the image)
+  span {
+    font-size: $font-size-2xl; // Using a larger font size to fit the compact header well
+    font-weight: bold;
+    color: $color-black-1;
+  }
+}
+
+// --- Navigation Links Container Styles ---
+.nav-links-container {
+  display: flex;
+  gap: $spacing-6;
+}
+
+// --- Individual Navigation Link Styles ---
+.nav-link {
+  color: $color-black-1;
+  text-decoration: none;
+  font-size: $font-size-lg;
+  font-weight: 500;
+  padding: $spacing-2 $spacing-3; // These paddings give the click area for the text links
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-primary-blue;
+  }
+}
+.button-element
+{
+
+  background-color: #e89c10bc;
+
+  border-radius: 5px;
+  color: $color-black;
+  text-decoration: none;
+  font-size: $font-size-lg;
+  font-weight: 500;
+  padding: $spacing-2 $spacing-3; // These paddings give the click area for the text links
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color-primary-blue;
+  }
+
+}
+
+// --- Styles for the Right-Aligned Image ---
+.header-right-image {
+  width: $spacing-10;
+  height: $spacing-10;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid $color-gray-200;
+  margin-left: $spacing-6;
+  align-self: center; // Ensures vertical centering within the header
+
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  &:hover {
+    transform: scale(1.25);
+    border-color: $color-primary-blue;
+  }
+}

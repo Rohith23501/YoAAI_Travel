@@ -1,0 +1,40 @@
+.trip-instructions{
+  flex-direction: column;
+  background: rgb(5, 242, 234);
+  width: auto;
+  height: 650px;
+  padding: 20px;
+  padding-bottom: 120px;
+  align-self: center;
+
+  background-image: url("https://i.imgur.com/UEtHrc3.jpeg");
+  //background-image: url("https://i.imgur.com/xmNLigZ.jpeg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  .trip-title-container{
+    display:flex;
+    .trip-title{
+    padding-bottom: 20px;
+    padding-left: 40px;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    align-self:left-start;
+    color: #000000;}}
+  .steps-container {
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60% auto;
+    height: 80%;
+    .steps-item{
+      display: flex;
+    }
+    
+    
+
+    
+
+}
+  
+}

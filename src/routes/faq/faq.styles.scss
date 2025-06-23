@@ -1,0 +1,164 @@
+/* src/components/FAQPage/faq_page.styles.scss */
+
+// Import Google Font - Inter (make sure to link it in your public/index.html)
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.faq-page-container {
+  font-family: 'Inter', sans-serif;
+  padding: 40px 20px;
+  background-color: #f8fbfd; /* Consistent light background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to top */
+  box-sizing: border-box;
+}
+
+.faq-content-wrapper {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.6;
+  color: #333;
+}
+
+.faq-main-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007bff; /* Primary blue color */
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.faq-intro-text {
+  font-size: 1.05rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between FAQ items */
+}
+
+.faq-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures smooth collapse/expand */
+  background-color: #fefefe;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+
+  &.open {
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.1); /* Subtle shadow when open */
+    border-color: #007bff; /* Highlight border when open */
+  }
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 18px 20px;
+  background-color: #f0f8ff; /* Light blue background for question */
+  border: none;
+  text-align: left;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #0056b3; /* Darker blue for question text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #e0f0ff; /* Slightly darker blue on hover */
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.3);
+  }
+}
+
+.faq-toggle-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-left: 15px;
+  transition: transform 0.3s ease; /* Smooth rotation for icon */
+  user-select: none; /* Prevent text selection on icon */
+}
+
+.faq-item.open .faq-toggle-icon {
+  transform: rotate(45deg); /* Rotate plus to become an X/minus */
+}
+
+.faq-answer-wrapper {
+  max-height: 0; /* Initially hidden */
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Smooth transition for height */
+  padding: 0 20px; /* Initial padding when collapsed */
+}
+
+.faq-item.open .faq-answer-wrapper {
+  max-height: 200px; /* Adjust as needed; should be larger than max possible answer height */
+  padding: 15px 20px 20px; /* Final padding when open */
+}
+
+.faq-answer {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  padding-bottom: 5px; /* Small buffer */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .faq-content-wrapper {
+    padding: 30px;
+  }
+  .faq-main-title {
+    font-size: 2rem;
+  }
+  .faq-question {
+    font-size: 1rem;
+    padding: 15px 18px;
+  }
+  .faq-answer {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-content-wrapper {
+    padding: 20px;
+    margin: 15px;
+  }
+  .faq-main-title {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+  }
+  .faq-intro-text {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+  .faq-question {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+  .faq-toggle-icon {
+    font-size: 1.2rem;
+  }
+  .faq-answer-wrapper.faq-item.open {
+    padding: 10px 15px 15px;
+  }
+}

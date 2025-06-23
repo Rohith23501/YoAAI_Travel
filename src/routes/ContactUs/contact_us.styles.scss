@@ -1,0 +1,116 @@
+// _contactUsStyling.scss
+.contact-us-total-container{
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  .contact-us-container {
+    
+    max-width: 300px;         /* Max width for the whole container for readability */
+    margin: 50px auto; 
+    margin-top: 80px;       /* Center horizontally with vertical margin */
+    padding: 35px;            /* Inner padding around content */
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 10px;      /* Slightly rounded corners */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+    color: #333333;           /* Standard dark text color */
+    line-height: 1.6; 
+    ;        /* Good line height for paragraphs */
+  }
+
+  .contact-us-container h2 {
+    text-align: center;
+    color: #000000;          /* Darker blue-grey for heading */
+    margin-bottom: 15px;     /* Space below heading */
+    font-size: 1.0em;        /* Larger font size for main heading */
+    font-weight: 600;        /* Slightly bolder */
+  }
+
+  .contact-us-container p {
+    text-align: center;
+    margin-bottom: 35px;     /* Space below introductory paragraph */
+    font-size: 0.7em;        /* Slightly larger font for intro text */
+    color: #111111;          /* Softer color for paragraph text */
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;  /* Arrange items vertically */
+    gap: 10px;               /* Space between each form group (label + input/textarea) */
+  }
+
+  .contact-form label {
+    font-weight: 600;        /* Bold labels */
+    margin-bottom: 3px;      /* Small space between label and its input */
+    color: #0b0b0b;
+    display: block;          /* Ensures labels take their own line for proper stacking */
+    font-size: 0.5em;
+  }
+
+  .contact-form {input[type="text"],
+                  input[type="email"]{
+                      height:35px;
+                      border-radius: 32px;
+                  }}
+  .contact-form textarea {
+    width: 100%;             /* Take full width of the form container */
+    padding: 12px 15px;      /* Inner padding for input fields */
+    border: 1px solid #cccccc; /* Light gray border */
+    border-radius: 6px;      /* Slightly rounded input fields */
+    box-sizing: border-box;  /* Important: includes padding and border in the element's total width */
+    font-size: 0.8em;          /* Standard readable font size */
+    font-family: inherit;    /* Inherit font from the container */
+    color: #333333;          /* Input text color */
+
+    &:focus {
+      border-color: #007bff; /* Primary blue border on focus */
+      outline: none;         /* Remove default browser outline */
+      box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25); /* Subtle glowing effect on focus */
+    }
+  }
+
+  .contact-form textarea {
+    resize: vertical;        /* Allow resizing only vertically */
+    height: 120px;       /* Minimum height for the message area */
+  }
+
+  .contact-form button[type="submit"] {
+    background-color: #007bff; /* Primary blue background for button */
+    color: #ffffff;            /* White text */
+    border: none;
+    border-radius: 6px;
+    padding: 14px 25px;        /* Generous padding for a clear button */
+    font-size: 0.5em;         /* Slightly larger font for the call to action */
+    font-weight: 600;          /* Bolder text */
+    cursor: pointer;           /* Indicate clickability */
+    margin-top: 10px;          /* Space above the button */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+
+    &:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+      transform: translateY(-2px); /* Subtle lift effect */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    }
+
+    &:active {
+      background-color: #004085; /* Even darker on click */
+      transform: translateY(0);  /* Returns to original position */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Reduced shadow for a "pressed" look */
+    }
+  } 
+
+  .contact-us-text-container{
+    display: flex;
+
+    .contact-us-text{
+      font-size: 1.0 em;
+      color: black;
+    }
+  }
+
+  .contact-us-text-container{
+    display: flex;
+  }
+
+}
