@@ -1,5 +1,5 @@
 import {Outlet, Link} from "react-router-dom";
-import { Fragment } from "react";
+
 
 import './navigation.styles.scss';
 
@@ -8,7 +8,7 @@ const Navigation = () =>
     return (
         <div>
         <header className="navigation-header">
-        <Fragment>
+        
             <div className="navigation">
                 <Link className="logo-container" to="/">
                      <img src="https://i.imgur.com/ABY36uM.jpeg" alt="Logo" className="logo" />    
@@ -24,7 +24,7 @@ const Navigation = () =>
                 </div>
             </div>
             
-        </Fragment>
+     
         
         </header>
         <Outlet/>
