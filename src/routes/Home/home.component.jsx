@@ -1,11 +1,11 @@
 import { Outlet} from 'react-router-dom';
 
-import Introduction from '../../components/introduction/intro.component';
+import Introduction from '../../components/introduction/intro.component.jsx';
 
 import Steps from '../../components/steps/steps.component.jsx';
-import ImageWithButtons from '../../components/image_buttons/image_buttons.component';
-import ChatAssistant from '../../components/chat_assistant/chat_assistant.component';
-import Footer from '../../components/footer/footer.component';
+import ImageWithButtons from '../../components/image_buttons/image_buttons.component.jsx';
+import ChatAssistant from '../../components/chat_assistant/chat_assistant.component.jsx';
+import Footer from '../../components/footer/footer.component.jsx';
 
 const Home = () => 
     {
