@@ -7,7 +7,7 @@ const CompDesButtonContent = () => {
 
   const dropdowns = [
     {
-      label: 'Type of Travel ?',
+      label: 'Traveler Type?',
       options: ['Solo', 'Couple', 'Family', 'Friends'],
       placeholder: "Any",
     },
@@ -26,6 +26,10 @@ const CompDesButtonContent = () => {
       options: ['Mid-Budget', 'Luxury', 'Budget'], 
       placeholder: "Any"
     },
+    { label: "Purspose",
+      options: ["Trip", "Business", "Vaction"],
+      placeholder: "Any"
+    }
 
   ]
 

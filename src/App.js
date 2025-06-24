@@ -2,11 +2,11 @@
 import './App.css';
 import { Routes, Route} from 'react-router-dom';
 import Home from './routes/home/home.component';
-import Navigation from './routes/Navigation/navigation.component';
-import Blog from './routes/Blog/blog.component';
-import ContactUs from './routes/ContactUs/contact_us.component';
+import Navigation from './routes/navigation/navigation.component';
+import Blog from './routes/blog/blog.component';
+import ContactUs from './routes/contactus/contact_us.component';
 import SignUp from './routes/signup/signup.component' ;
-import AboutUs from  './routes/AboutUs/aboutus.component' ;
+import AboutUs from  './routes/aboutus/aboutus.component' ;
 import FAQ from './routes/faq/faq.component' ;
 function App() {
   return (
