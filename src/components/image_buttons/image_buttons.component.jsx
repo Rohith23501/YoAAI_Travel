@@ -52,9 +52,7 @@ function ImageWithButtons() {
                                             ) : null}
             
            
-        <div>
-
-        </div>
+        
         
       </div>
 

@@ -9,7 +9,7 @@
   
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  max-width:fill;
+  max-width:stretch;
   //background-color: #fff;
   font-family: Arial, sans-serif;
   height: auto;
@@ -46,7 +46,7 @@
   .display-image {
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: stretch;
     display: block;
   }
 
