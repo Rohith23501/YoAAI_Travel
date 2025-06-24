@@ -1,6 +1,6 @@
 import './contact_us.styles.scss';
 import { Outlet } from 'react-router-dom';
-import ContactUsText from '../../components/contactustext/contactustext.component';
+
 const ContactUs = () => {
     return (
         <div className="contact-us-total-container">

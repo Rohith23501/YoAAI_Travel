@@ -1,0 +1,118 @@
+/* src/components/Footer/footer.styles.scss */
+
+// Import Google Font - Inter (make sure to link it in your public/index.html)
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.site-footer {
+  background-color: #2c3e50; /* Dark blue/gray background */
+  color: #ecf0f1; /* Light text color */
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  border-top: 5px solid #007bff; /* A subtle accent line */
+}
+
+.footer-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr; /* Stack columns on small screens */
+  gap: 30px;
+  max-width: 1200px; /* Max width for content */
+  margin: 0 auto; /* Center the content wrapper */
+  text-align: center; /* Default text alignment */
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+    text-align: left; /* Align text left within columns on larger screens */
+  }
+}
+
+.footer-section {
+  h3, h4 {
+    color: #f1c40f; /* Accent color for headings */
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+}
+
+.footer-brand {
+  .footer-logo {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+  }
+  .footer-tagline {
+    font-style: italic;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #bdc3c7;
+  }
+  .footer-copyright {
+    font-size: 0.8rem;
+    color: #95a5a6;
+  }
+}
+
+.footer-links {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  .footer-link {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #007bff; /* Primary blue on hover */
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-contact-social {
+  .footer-contact-info {
+    margin-bottom: 20px;
+    .footer-link {
+      color: #ecf0f1;
+      text-decoration: none;
+      &:hover {
+        color: #007bff;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center; /* Center icons on small screens */
+    gap: 15px;
+
+    @media (min-width: 768px) {
+      justify-content: flex-start; /* Align icons left on larger screens */
+    }
+
+    .social-icon {
+      color: #ecf0f1;
+      width: 28px; /* Icon size */
+      height: 28px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #007bff; /* Primary blue on hover */
+      }
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

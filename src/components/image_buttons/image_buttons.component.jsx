@@ -1,7 +1,7 @@
 // ImageWithButtons.jsx
-import {useState, useEffect} from 'react';
+import {useState, } from 'react';
 import './image_buttons.styles.scss'; // Import the SCSS file
-import button_image from './image_component_1.png'; // Ensure this image is in the correct path
+// Ensure this image is in the correct path
 import CompDesButtonContent from '../compdes_button/compdes_button.component.jsx';
 import DrecButtonContent from '../drec_button/drec_button.component.jsx';
 
@@ -20,7 +20,7 @@ function ImageWithButtons() {
         "className": "secondary-button"},
     
     ]
-    console.log("image button once")
+    
     return (
 
     <div className="image-with-buttons-container">

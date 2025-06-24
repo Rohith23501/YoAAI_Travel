@@ -7,18 +7,20 @@ const BlogCard = ({sample_card}) => {
     
     return (
         
-        <div className="blog-card"  onMouseEnter={() => setIsHovered(true)}
-        
-                                    onMouseLeave={() => setIsHovered(false)}>
+        <div className="blog-card" 
+            style={{'--background-url':sample_card.url ? `url(${sample_card.url})`: `url('https://i.imgur.com/lz2WJjU.jpeg')`} }
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}>
 
             
-            <img src={sample_card.image} alt="Blog Post" className="blog-card-image" />
-            <div className="blog-card-content">
+           
+            <>
                 { (isHovered) ? 
                     (<p className="blog-card-description"> {sample_card.description}</p>):
                     (<p className="blog-card-title">{sample_card.title} </p>)
                 }
-            </div>
+            </>
+           
            
 
             

@@ -1,5 +1,5 @@
 
-import intro_image from './gemini_generated_traveller_page.png'; // Ensure this image is in the correct path
+ // Ensure this image is in the correct path
 
 import './intro.scss'; // <-- Import your SCSS file
 
@@ -8,7 +8,7 @@ const IntroSection = () => {
     <section className="intro-section-container">
       <div className="intro-image-wrapper">
         <img
-          src={intro_image}
+          src='https://i.imgur.com/KCapj4C.jpeg'
           alt="Introduction to AI Journey"
         />
       </div>

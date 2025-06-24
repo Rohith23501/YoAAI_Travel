@@ -127,8 +127,8 @@ function LoginPage() {
 
         {/* Optional: Links for forgotten password or sign up */}
         <div className="form-links">
-          <a  className="link-text">Forgot password?</a>
-          <span>Don't have an account? <a  className="link-text">Sign Up</a></span>
+          <a  href="https://example.com/images/banff.jpg" className="link-text">Forgot password?</a>
+          <span>Don't have an account? <a href="https://example.com/images/banff.jpg" className="link-text">Sign Up</a></span>
         </div>
       </form>
     </div>
