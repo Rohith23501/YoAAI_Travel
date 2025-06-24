@@ -1,12 +1,10 @@
 import './contact_us.styles.scss';
-import { Outlet } from 'react-router-dom';
+
 
 const ContactUs = () => {
     return (
         <div className="contact-us-total-container">
-            <div >
-                <p> </p>
-            </div>
+            
 
 
             <div className="contact-us-container">
@@ -29,7 +27,7 @@ const ContactUs = () => {
             </div>
            
 
-            <Outlet/>
+            
         </div>
     );
 }

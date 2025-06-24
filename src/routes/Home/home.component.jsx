@@ -1,4 +1,4 @@
-import { Outlet} from 'react-router-dom';
+
 
 import Introduction from '../../components/introduction/intro.component.jsx';
 
@@ -15,11 +15,14 @@ const Home = () =>
                 <Steps />
                 <ImageWithButtons />
                
-                 <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-                    <ChatAssistant />
-                </div>
+                 
+                
+                
+                
+                <ChatAssistant />
+               
                 <Footer/>
-                <Outlet />
+                
             </div>
             
         );
