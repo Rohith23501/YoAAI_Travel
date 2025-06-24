@@ -73,7 +73,8 @@ const DrecButtonContent = () => {
               ))}
             </div><div className="activities-title">
               <p className="activities-title-text">Choose the Activities you would like to Explore</p>
-            </div><Activities className="activities-container" />
+            </div>
+            <Activities className="activities-container" />
             <button onClick={handleSubmitClick}className="submit-button"> Submit</button>
           </div>)} </>
     

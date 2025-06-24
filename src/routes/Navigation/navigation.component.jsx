@@ -1,6 +1,6 @@
 import {Outlet, Link} from "react-router-dom";
 import { Fragment } from "react";
-import logo_ from './logo_3.png'; 
+
 import './navigation.styles.scss';
 
 const Navigation = () => 
